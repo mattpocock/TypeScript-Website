@@ -1,0 +1,12 @@
+import { PlaygroundPlugin } from ".";
+type Sandbox = import("@typescript/sandbox").Sandbox;
+export declare const createDragBar: (side: "left" | "right") => HTMLDivElement;
+export declare const sidebarHidden: () => boolean;
+export declare const createSidebar: () => HTMLDivElement;
+export declare const setupSidebarToggle: () => void;
+export declare const createTabBar: () => HTMLDivElement;
+export declare const createPluginContainer: () => HTMLDivElement;
+export declare const createTabForPlugin: (plugin: PlaygroundPlugin) => HTMLButtonElement;
+export declare const activatePlugin: (plugin: PlaygroundPlugin, previousPlugin: PlaygroundPlugin | undefined, sandbox: Sandbox, tabBar: HTMLDivElement, container: HTMLDivElement) => void;
+export declare const createNavigationSection: () => HTMLDivElement;
+export {};
