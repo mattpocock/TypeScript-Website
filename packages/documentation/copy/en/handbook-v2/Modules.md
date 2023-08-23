@@ -334,12 +334,11 @@ There is a mis-match in features between CommonJS and ES Modules regarding the d
 
 Module resolution is the process of taking a string from the `import` or `require` statement, and determining what file that string refers to.
 
-TypeScript includes two resolution strategies: Classic and Node. Classic, the default when the compiler option [`module`](/tsconfig#module) is not `commonjs`, is included for backwards compatibility.
-The Node strategy replicates how Node.js works in CommonJS mode, with additional checks for `.ts` and `.d.ts`.
+TypeScript includes several resolution strategies, which are detailed in the [`moduleResolution`](/tsconfig#moduleResolution) TSConfig option. These can be used to replicate Node.js's module resolution behavior in TypeScript.
 
-There are many TSConfig flags which influence the module strategy within TypeScript: [`moduleResolution`](/tsconfig#moduleResolution), [`baseUrl`](/tsconfig#baseUrl), [`paths`](/tsconfig#paths), [`rootDirs`](/tsconfig#rootDirs).
+There are other TSConfig flags which influence TypeScript's module strategy: [`baseUrl`](/tsconfig#baseUrl), [`paths`](/tsconfig#paths), [`rootDirs`](/tsconfig#rootDirs).
 
-For the full details on how these strategies work, you can consult the [Module Resolution](/docs/handbook/module-resolution.html).
+For the full details on how these strategies work, you can consult the [Module Resolution](/docs/handbook/module-resolution.html) docs.
 
 ## TypeScript's Module Output Options
 
